@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="/layouts/header :: header"></div>
+<body>
+<div class="welcome">
+    <div class="welcomeText">
+        <p>Madspild</p>
+        <p>i</p>
+        <p>Danmark</p>
+    </div>
+</div>
+<div class="box">
+    <img th:src="@{/images/madspildleft.jpg}" class="showRightImage"/>
+    <span class="showRightText">blablablbalbl</span>
+</div>
+<div class="box">
+    <span class="showLeftText">Ipsum balblblblalba</span>
+    <img th:src="@{/images/madspildright.jpg}" class="showLeftImage"/>
+</div>
+</body>
+<div th:replace="/layouts/footer :: footer"></div>
+</html>

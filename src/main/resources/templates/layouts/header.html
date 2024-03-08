@@ -1,0 +1,22 @@
+<div th:fragment="header">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome</title>
+        <link th:href="@{/style.css}" rel="stylesheet">
+    </head>
+  <div >
+      <ul class="navbar">
+          <img th:src="@{/images/danish-flag-logo.png}" class="logo"/>
+          <button class="navbarButton">Home</button>
+          <button class="navbarButton">About</button>
+          <button class="navbarButton">Help</button>
+          <div class="dropdown">
+              <button class="navbarButton">Help</button>
+              <div class="dropdown-content">
+                  <button class="navbarButton">Hi</button>
+                  <button class="navbarButton">Whats up</button>
+              </div>
+          </div>
+      </ul>
+  </div>
+</div>

@@ -7,7 +7,7 @@
   <div>
       <ul class="navbar">
           <img th:src="@{/images/danish-flag-logo.png}" class="logo"/>
-          <a th:href="@{/}">
+          <a th:href="@{/}" class="a">
           <button class="navbarButton">Home</button>
           </a>
           <button class="navbarButton">About</button>
@@ -15,8 +15,8 @@
           <div class="dropdown">
               <button class="navbarButton" >Help</button>
               <div class="dropdown-content">
-                  <a th:href="@{/forbruger}">
-                      <button type="button"> Forbruger</button>
+                  <a th:href="@{/forbruger}" class="a">
+                      <button class="navbarButton"> Forbruger</button>
                   </a>
                   <button class="navbarButton">Whats up</button>
               </div>

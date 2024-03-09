@@ -9,7 +9,7 @@ public class Controller {
 
     @GetMapping("/forbruger")
     public String forbruger(){
-        return "forbruger";
+        return "forbrug1";
     }
 
 }

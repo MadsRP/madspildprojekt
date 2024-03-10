@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<div th:replace="/layouts/header :: header"></div>
+
+<link rel="stylesheet" href="/static/testing.css">
+<style>
+
+  body{
+    background-image: url('../static/images/Forbruger/Background2.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+<body>
+
+<div class="box">
+  <div class="content-section">
+    <div class="text-section">
+      <h1>Opdag mere: Klik og udforsk!</h1>
+      <br><br>
+      <h2 >Vi i WFP ved, hvilken værdi mad har for de 100 millioner mennesker, vi fodrer hvert år. Vi ser den positive indvirkning, mad har i menneskers liv. Der er mad nok i verden til at brødføde alle børn, kvinder og mænd på denne planet. Alligevel ender en tredjedel af den mad med at rådne i skraldespande eller blive fordærvet under transport og opbevaring, mens 690 millioner mennesker går sultne i seng hver aften.</h2>
+
+    </div>
+  </div>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TVP3j7_W7og?si=1otT6Myw-RUABxJ_" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+</body>
+
+<div th:replace="/layouts/footer :: footer"></div>
+</html>

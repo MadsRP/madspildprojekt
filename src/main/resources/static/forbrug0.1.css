@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ----- BOXEN -----*/
+
+.box {
+  position: relative;
+  width: 900px;
+  height: 800px;
+  max-height: 80vh;
+  background: transparent;
+  border: 1px solid #fff;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: -1;
+}
+
+
+
+/* ---- TEXTEN -----*/
+
+.content-section {
+  display: flex;
+  justify-content: space-between; /* Plasserer innholdet til venstre og høyre */
+  align-items: center;
+  width: 50%; /* Sørger for at innholdet strekker seg over hele bredden av .box */
+  color: whitesmoke;
+}
+
+.text-section {
+  flex: 1; /* La tekstseksjonen ta opp all tilgjengelig plass i flex containeren */
+  padding-right: 10px; /* Legg til litt mellomrom mellom tekst og video */
+}
+
+.heading-section {
+  color: #fff;
+}
+.box h2 {
+  font-weight: normal; /* Setter fontvekten til normal (ikke fet) */
+}
+
+
+
+/* ----- VIDEO ---*/
+
+.video-container {
+  width: 100%; /* Juster bredden slik at videoen tar opp halvparten av tilgjengelig plass */
+  max-width: 100%; /* Endre maksimalbredden til 100% for å sikre at hele videoen er synlig */
+  overflow: hidden;
+}

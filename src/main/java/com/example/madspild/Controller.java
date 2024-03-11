@@ -12,4 +12,7 @@ public class Controller {
 
     @GetMapping("/virksomhed")
     public String virksomhed() { return "virksomhed";}
+
+    @GetMapping("/organisation")
+    public String organisation(){return "organisation";}
 }

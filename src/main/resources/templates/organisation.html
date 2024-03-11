@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danmark mod Madspild</title>
+    <link th:href="@{/organisation/organisation.css}" rel="stylesheet"></head>
+<body>
+<!-- Header sektion -->
+<div th:replace="~{layouts/header :: header}"></div>
+
+    <!-- Main sektion -->
+    <main>
+        <!-- Om os sektion -->
+        <section id="about">
+            <h2>Om os</h2>
+            <p>Danmark mod Madspild arbejder dedikeret på at bekæmpe madspild i Danmark. Vi samarbejder med virksomheder, organisationer og frivillige for at finde løsninger på dette voksende problem.</p>
+        </section>
+
+        <!-- Initiativer sektion -->
+        <section id="initiatives">
+            <h2>Initiativer</h2>
+            <div class="initiative">
+                <h3>Madspildsreduktion i detailhandelen</h3>
+                <p>Vi samarbejder med detailhandelen for at reducere madspild gennem bedre lagerstyring, salgsfremmende aktiviteter og donationer til velgørende formål.</p>
+            </div>
+            <div class="initiative">
+                <h3>Uddannelse og oplysning</h3>
+                <p>Vi tilbyder kurser og workshops om madspildsforebyggelse til virksomheder og organisationer. Vi informerer også offentligheden gennem kampagner og sociale medier.</p>
+            </div>
+        </section>
+
+        <!-- Ressourcer sektion -->
+        <section id="resources">
+            <h2>Ressourcer</h2>
+            <ul>
+                <li><a href="#">Guide til reduktion af madspild i virksomheder</a></li>
+                <li><a href="#">Vejledning til frivillige om indsats mod madspild</a></li>
+                <li><a href="#">Rapport: Kortlægning af madspild i Danmark</a></li>
+            </ul>
+        </section>
+
+        <!-- Kontakt sektion -->
+        <section id="contact">
+            <h2>Tilmelding som frivillig</h2>
+            <p>Vil du gerne blive frivillig? Kontakt os via kontaktformularen nedenfor.</p>
+            <form action="#" method="post">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Besked:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer sektion -->
+    <footer>
+        <p>&copy; 2024 Danmark mod Madspild. Alle rettigheder forbeholdes.</p>
+    </footer>
+
+</body>
+</html>

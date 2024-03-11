@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    color: white; /* Ændret tekstfarven til hvid */
+}
+
+h2 {
+    font-size: 2.5vw; /* Øget størrelsen på overskrifter */
+    margin-bottom: 1.5vw; /* Øget afstanden mellem overskrifter og indhold */
+}
+p {
+    font-size: 1.5vw; /* Øget størrelsen på almindelig tekst */
+    line-height: 2.2vw; /* Øget linjehøjden for bedre læsbarhed */
+    margin-bottom: 1.5vw; /* Øget afstanden mellem afsnit */
+}
+/* Specifikke baggrunde for hver container/boks */
+#about { background: linear-gradient(to right, #6A097D, #D40C52); padding: 6vw; }
+#initiatives { background: linear-gradient(to right, #393e46, #2b2d42); padding: 6vw; }
+#resources { background: linear-gradient(to right, #56CCF2, #2F80ED); padding: 6vw; }
+#contact { background: linear-gradient(to right, #4A00E0, #8E2DE2); padding: 6vw; }
+
+/* Tilpasning af layoutet for kontaktformularen */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Sørg for, at formularen er i fuld bredde */
+}
+
+#contact form label {
+    margin-bottom: 0.8vw; /* Juster afstanden mellem etiketter */
+    font-size: 1.5vw; /* Øget størrelsen på etiketter */
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+    margin-bottom: 1.5vw; /* Juster afstanden mellem felter og knap */
+    width: 100%; /* Gør inputfelter og knap bredden af containeren */
+    font-size: 1.5vw; /* Øget størrelsen på inputfelter og knap */
+}
+
+/* Større billeder til sociale medier */
+.SoMePicture {
+    height: 4vw; /* Juster størrelsen efter behov */
+    width: 4vw;  /* Juster størrelsen efter behov */
+    background: #1E1C1C;
+    border-radius: 50%;
+}
+
+/* Den følgende del sikrer bedre visning for mindre skærme/opløsninger*/
+@media (max-width: 800px) {
+    #about, #initiatives, #resources, #contact {
+        padding: 10vw; /* Øget padding på mindre skærme for bedre plads */
+    }
+
+    h2 {
+        font-size: 4vw; /* Mindre overskriftsstørrelse på mindre skærme */
+    }
+
+    p {
+        font-size: 3vw; /* Mindre tekststørrelse på mindre skærme */
+        line-height: 4vw; /* Justeret linjehøjde for bedre læsbarhed */
+        margin-bottom: 2vw; /* Mindre afstand mellem afsnit på mindre skærme */
+    }
+}

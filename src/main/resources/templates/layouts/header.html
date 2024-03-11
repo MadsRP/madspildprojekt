@@ -1,27 +1,56 @@
 <div th:fragment="header">
     <head>
         <meta charset="UTF-8">
-        <title>Welcome</title>
-        <link th:href="@{/style.css}" rel="stylesheet">
+        <title>Madspild</title>
+        <link th:href="@{/andet/style.css}" rel="stylesheet">
+        <link th:href="@{/andet/header.css}" rel="stylesheet">
     </head>
-  <div>
+  <div class="headerDiv">
       <ul class="navbar">
-          <img th:src="@{/images/danish-flag-logo.png}" class="logo"/>
           <a th:href="@{/}" class="a">
-          <button class="navbarButton">Home</button>
+              <img th:src="@{/images/welcome/danish-flag-logo.png}" class="logo"/>
           </a>
-          <button class="navbarButton">About</button>
-          <button class="navbarButton">Help</button>
           <div class="dropdown">
-              <button class="navbarButton" >Help</button>
+              <button class="navbarButton" >Som Forbruger</button>
+              <div class="dropdown-content">
+                  <a th:href="@{/forbruger}" class="a">
+                      <button class="navbarButton"> Tips Og Tricks</button>
+                  </a>
+                  <a th:href="@{/forbruger}" class="a">
+                      <button class="navbarButton"> Opskrifter</button>
+                  </a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="navbarButton" >Som Virksomhed</button>
+              <div class="dropdown-content">
+                  <a th:href="@{/virksomhed}" class="a">
+                      <button class="navbarButton">Tips Og Tricks</button>
+                  </a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="navbarButton" >Som Organisation</button>
               <div class="dropdown-content">
                   <a th:href="@{/forbruger}" class="a">
                       <button class="navbarButton"> Forbruger</button>
                   </a>
-                  <button class="navbarButton">Whats up</button>
               </div>
           </div>
+          <button class="navbarButton">Om Os</button>
+          <button class="navbarButton">Kontakt</button>
       </ul>
+      <div class="SoMeIcons">
+          <a class="a" href="http://www.facebook.com">
+              <img th:src="@{/images/Footer/facebook.png}" class="SoMePicture"/>
+          </a>
+          <a class="a" href="http://www.instagram.com">
+              <img th:src="@{/images/Footer/instagram.png}" class="SoMePicture"/>
+          </a>
+          <a class="a" href="http://www.twitter.com">
+              <img th:src="@{/images/Footer/twitter.png}" class="SoMePicture"/>
+          </a>
+      </div>
   </div>
 </div>
 

@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12vw;
+    color: white;
+    min-height: 30vh;
+}
+
+/* Specifikke baggrunde for hver container/boks */
+.container-1 { background: linear-gradient(to right, #2a2a72, #009ffd); }
+.container-2 { background: linear-gradient(to right, #4b6cb7, #182848); }
+.container-3 { background: linear-gradient(to right, #36D1DC, #5B86E5); }
+.container-4 { background: linear-gradient(to right, #243b55, #141E30); }
+.container-5 { background: linear-gradient(to right, #6a7b98, #8399a7); }
+
+.content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2.3vw;
+    margin-bottom: 1.2vw;
+}
+
+p {
+    font-size: 1.0vw;
+    line-height: 1.8vw;
+    margin-bottom: 1.2vw;
+}
+
+.image {
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* Den følgende del sikrer bedre visning for mindre skærme/opløsninger*/
+@media (max-width: 800px) {
+    .container {
+        padding:6vw;
+    }
+
+    h1 {
+        font-size: 2.8vw;
+    }
+
+    p {
+        font-size: 1.8vw;
+    }
+}

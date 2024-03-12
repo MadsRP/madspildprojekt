@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danmark mod Madspild</title>
     <link th:href="@{/organisation/organisation.css}" rel="stylesheet"></head>
+
+<div th:replace="~{layouts/header :: header}"></div>
 <body>
 <!-- Header sektion -->
-<div th:replace="~{layouts/header :: header}"></div>
 
     <!-- Main sektion -->
     <main>
@@ -57,9 +58,9 @@
     </main>
 
     <!-- Footer sektion -->
-    <footer>
-        <p>&copy; 2024 Danmark mod Madspild. Alle rettigheder forbeholdes.</p>
-    </footer>
+
 
 </body>
+
+<div th:replace="~{layouts/footer :: footer}"></div>
 </html>

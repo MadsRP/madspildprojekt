@@ -1,78 +1,97 @@
-.headerDiv{
+.headerDiv {
     display: flex;
-    background: #1E1C1C;
     position: fixed;
+    background-color: #ffffff;
     top: 0;
+    padding: 0;
     width: 100%;
     z-index: 1000;
 }
 
-.navbar{
-    list-style-type: none;
-    margin: 0;
-    background-color: #1E1C1C;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbarList{
-    display: flex;
-    align-items: center;
-
-}
-
-.logo{
+.logo {
     margin-left: 3vw;
     padding-top: 10px;
     height: 40px;
     width: 45px;
 }
 
-.navbarButton{
-    border: none;
-    height: 60px;
-    width: 100px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
-    color: white;
-    background-color: #1E1C1C;
+.navbar {
+    display: flex;
 }
 
-.navbarButton:hover{
-    background-color: gray;
+.navbarList {
+    display: flex;
+    align-items: center;
+}
+
+.navbarButton {
+    color: #000000;
+    border:none;
+    height: 60px;
+    width: 150px;
+    font-weight: 1000;
+    text-align: center;
+    background-color: white;
+    text-decoration: none; /* Fjerner standard understregning */
+    position: relative; /* Gør det muligt at positionere pseudo-elementer relativt til knappen */
+    overflow: hidden; /* Sikrer at pseudo-elementet ikke går udenfor knappens grænser */
+    cursor: pointer;
+}
+
+.navbarButton::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 0; /* Start med en bredde på 0 for at skabe animationseffekten */
+    height: 4px; /* Højden på din understregning */
+    background-color: #2b6cce; /* Farven på din understregning */
+    transition: width 0.4s ease; /* Animation over 0.3 sekunder */
+}
+
+.navbarButton:hover::after {
+    width: 70%; /* Understregning tager hele bredden, når der hoveres */
 }
 
 .dropdown {
     height: 60px;
-    width: 100px;
-    margin: 0;
-    text-align: center;
-    display: inline-block;
-    color: white;
-    background-color: black;
+    width: 150px;
+    color: #000000; /* Tekstfarve ændret til sort for bedre synlighed */
 }
 
 .dropdown-content {
-    color: white;
     display: none;
-    position: absolute;
-    background-color: black;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    padding: 4px 4px;
-    z-index: 1;
+    min-width: 100px; /* Minimumsbredde for dropdown indhold */
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: transparent;
 }
 
 .dropdown:hover .dropdown-content {
-    background-color: #1E1C1C;
     display: block;
 }
 
-.dropdown:hover{
-    background-color: gray;
+.SoMeIcons{
+    margin-top: 1vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vw;
+    width:200vh;
+    background-color: white;
+    text-align: right;
 }
 
+.SoMePicture{
+    height: 1.5vw;
+    width: 1.5vw;
+    background: white;
+    border-radius: 50%;
+}

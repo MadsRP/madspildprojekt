@@ -5,9 +5,7 @@
 
 }
 
-body{
-    background-color:#1E1C1C;
-}
+
 
 .welcome{
     background-image: url("../images/welcome/background.bmp ");
@@ -27,7 +25,7 @@ body{
     font-weight: 700;
     letter-spacing: 3px;
     color: #1f145e;
-    text-shadow:    -1px 1px 0px #aeb8fe,
+    text-shadow:    -1px 1px 0 #aeb8fe,
                     1px 1px 0 #aeb8fe,
                     1px -1px 0 #aeb8fe,
                     -1px -1px 0 #aeb8fe;
@@ -40,7 +38,7 @@ body{
 
 .welcomeSpan{
     color: #aeb8fe;
-    text-shadow:    -1px 1px 0px white,
+    text-shadow:    -1px 1px 0 white,
     1px 1px 0 white,
     1px -1px 0 white,
     -1px -1px 0 white;
@@ -66,7 +64,7 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 3px;
-    text-shadow:    -1px 1px 0px white,
+    text-shadow:    -1px 1px 0 white,
     1px 1px 0 white,
     1px -1px 0 white,
     -1px -1px 0 white;

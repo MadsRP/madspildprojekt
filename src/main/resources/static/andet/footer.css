@@ -1,40 +1,24 @@
 .footerDiv{
-    background: #1E1C1C;
     height: 1vw;
+    background-color: white;
+    margin-bottom:0;
 }
 
 .footerUL{
+    background-color: white;
     list-style-type: none;
     margin: 0;
     width: 100%;
     display: flex;
-    background: #1E1C1C;
 }
 
 .footer{
+    margin-bottom: 0;
+    color:black;
     display: flex;
     align-items: center;
     text-align: center;
-    color:white;
     margin-left:1%;
     font-weight: 700;
     letter-spacing: 2px;
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
-}
-
-.SoMeIcons{
-    margin-top: 1vw;
-    margin-right: 0.5vw;
-    margin-bottom: 0.5vw;
-    background: #1E1C1C;
-    width:200vh;
-    text-align: right;
-}
-
-.SoMePicture{
-    height: 1.5vw;
-    width: 1.5vw;
-    background: #1E1C1C;
-    border-radius: 50%;
 }

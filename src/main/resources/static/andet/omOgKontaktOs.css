@@ -1,0 +1,133 @@
+body, html {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9vw;
+    color: white;
+    height: 12.5vh;
+}
+
+/* Specifikke baggrunde for hver container/boks */
+.container-1  { background: linear-gradient(to right, #39592b, #9fd188); }
+
+.container-2 {
+    background: rgb(158,158,186);
+    background: linear-gradient(90deg, rgba(158,158,186,1) 0%, rgba(185,197,199,1) 87%, rgba(118,131,134,1) 100%);
+}
+.container-3 {
+    background: rgb(166,166,175);
+    background: linear-gradient(77deg, rgba(166,166,175,1) 19%, rgba(126,143,145,1) 70%, rgba(118,131,134,1) 93%);
+}
+
+.content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2.3vw;
+    margin-bottom: 1.2vw;
+}
+
+p {
+    font-size: 1.0vw;
+    line-height: 1.8vw;
+    margin-bottom: 1.2vw;
+}
+
+h2  {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-underline: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.boxes
+{
+    width: 100%;
+    background: linear-gradient(to right, #40704d, #6ab87f);
+    float:left;
+    margin: 0 auto;
+    height: 41.8vh;
+}
+
+.box1 {
+    float:left;
+    background: rgb(73,113,19);
+    background: linear-gradient(50deg, rgba(73,113,19,1) 4%, rgba(94,162,80,1) 89%, rgba(154,190,147,1) 99%);
+    width: 31.4vh;
+    height: 41.8vh;
+    margin-left: 14%;
+    margin-top: -3%;
+    border-radius: 3%;
+    box-shadow: 0 4px 4px 0 black;
+    color: white;
+}
+.box2 {
+    float:left;
+    background: rgb(73,113,19);
+    background: linear-gradient(50deg, rgba(73,113,19,1) 4%, rgba(94,162,80,1) 89%, rgba(154,190,147,1) 99%);
+    width: 31.4vh;
+    height: 41.8vh;
+    margin-left: 11%;
+    margin-top: -3%;
+    border-radius: 3%;
+    box-shadow: 0 4px 4px 0 black;
+    color: white;
+}
+.box3 {
+    float:left;
+    background: rgb(73,113,19);
+    background: linear-gradient(50deg, rgba(73,113,19,1) 4%, rgba(94,162,80,1) 89%, rgba(154,190,147,1) 99%);
+    width: 31.4vh;
+    height: 41.8vh;
+    margin-left: 11%;
+    margin-top: -3%;
+    border-radius: 3%;
+    box-shadow: 0 4px 4px 0 black;
+    color: white;
+}
+
+.informationText
+{
+    font-weight: 400;
+    margin-left: 5%;
+}
+
+.image {
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+
+/* Den følgende del sikrer bedre visning for mindre skærme/opløsninger*/
+@media (max-width: 800px) {
+    .container {
+        padding:6vw;
+    }
+
+    h1 {
+        font-size: 2.8vw;
+    }
+
+    p {
+        font-size: 1.8vw;
+    }
+}
+
+

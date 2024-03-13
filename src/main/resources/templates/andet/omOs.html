@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<div th:replace="/layouts/header :: header"></div>
+<link th:href="@{/andet/omOgKontaktOs.css}" rel="stylesheet">
+<body>
+
+<div class="container container-2">
+    <div class="content">
+        <h1>Om Os</h1>
+        <p>Nedenunder har vi skrevet lidt om os selv og hvorfor vi syntes det her er vigtigt.</p>
+    </div>
+</div>
+
+<div class="container container-3">
+    <div class="image">
+        <img th:src="@{/images/andet/teacher.jpg}" alt="Måling af Madspild">
+    </div>
+    <div class="content">
+        <h1>Forståelse Fremmer Alt</h1>
+        <p>Vi mener indenfor madspild er det vigtigt at vi konstant bliver bedre til at forstå de problematikker der forekommer ved madspild og derfor har vi udviklet en hjemmeside til at fremme forståelsen ikke blot hos den almene dansker, men også for virksomheder og organisationer.</p>
+    </div>
+</div>
+
+<div class="container container-3">
+    <div class="content">
+        <h1>Madspild Er Dårligt!</h1>
+        <p>Vi vil håbe at vores initiativ vil hjælpe nok til at kunne gøre en lille forskel i hver persons liv. En lille ændring i mange mennesker liv, vil have stor betydning senere. </div>
+    <div class="image">
+        <img th:src="@{/images/andet/change.jpg}" alt="Måling af Madspild">
+    </div>
+</div>
+
+
+</body>
+
+<div th:replace="/layouts/footer :: footer"></div>
+</html>

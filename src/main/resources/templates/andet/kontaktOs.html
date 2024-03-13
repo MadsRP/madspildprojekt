@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<div th:replace="/layouts/header :: header"></div>
+<link th:href="@{/andet/omOgKontaktOs.css}" rel="stylesheet">
+<body>
+
+<div class="container container-1">
+  <div class="content">
+    <h1>Kontakt Os</h1>
+    <p>Nedenunder kan du finde måder at kontakte os på.</p>
+  </div>
+</div>
+
+<div class="boxes">
+  <div class="box1">
+    <h2 style="text-align:center;">Telefon</h2>
+    <div class="informationText">
+    <p >Tlf: +451234578</p>
+    <p style="margin-bottom: 4px">Hverdage Mellem:</p>
+    <p>8:00 til 16:00</p>
+    <p style="margin-bottom: 4px">Weekender:</p>
+    <p>Lukket</p>
+    </div>
+  </div>
+  <div class="box2">
+    <h2>Adresse</h2>
+    <div class="informationText">
+      <p>Vej Navn 1</p>
+      <p>1050</p>
+      <p>København</p>
+    </div>
+  </div>
+  <div class="box3">
+    <h2>Email</h2>
+    <div class="informationText">
+      <p style="margin-bottom: 4px">Direkte:</p>
+      <p>Madspild@Madspild.dk</p>
+      <p style="margin-bottom: 4px">Events:</p>
+      <p>Events@Madspild.dk</p>
+    </div>
+</div>
+</div>
+
+
+</body>
+
+<div th:replace="/layouts/footer :: footer"></div>
+</html>

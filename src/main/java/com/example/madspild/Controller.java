@@ -5,14 +5,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 @org.springframework.stereotype.Controller
 public class Controller {
 
+    @GetMapping("/")
+    public String index(){return "/andet/forside";}
+
     @GetMapping("/forbruger")
     public String forbruger(){
-        return "forbruger";
+        return "/forbruger/forbruger";
     }
 
     @GetMapping("/virksomhed")
-    public String virksomhed() { return "virksomhed";}
+    public String virksomhed() { return "/virksomhed/virksomhed";}
 
     @GetMapping("/organisation")
-    public String organisation(){return "organisation";}
+    public String organisation(){return "/organisation/organisation";}
+
+    @GetMapping("/omOs")
+    public String omOs(){return "/andet/omOs";}
+
+    @GetMapping("/kontaktOs")
+    public String kontaktOs(){return "/andet/kontaktOs";}
 }

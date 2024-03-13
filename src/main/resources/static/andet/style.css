@@ -2,16 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: Arial, serif;
-
 }
 
-
-
 .welcome{
-    background-image: url("../images/welcome/background.bmp ");
+    background-image: url("../images/forside/clean2.png ");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 93vh;
+    height: 95.4vh;
     width: 100%;
 }
 
@@ -20,50 +17,23 @@
     padding-left: 75px;
     height: 300px;
     padding-top: 120px;
-    font-size: 7vw;
+    font-size: 5vw;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
-    color: #1f145e;
-    text-shadow:    -1px 1px 0 #aeb8fe,
-                    1px 1px 0 #aeb8fe,
-                    1px -1px 0 #aeb8fe,
-                    -1px -1px 0 #aeb8fe;
+    color: #ffffff;
+    text-shadow:    -1px 1px 0 #ffffff,
+                    1px 1px 0 #ffffff,
+                    1px -1px 0 #ffffff,
+                    -1px -1px 0 #ffffff;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
-
 }
 
 .welcomeSpan{
-    color: #aeb8fe;
-    text-shadow:    -1px 1px 0 white,
-    1px 1px 0 white,
-    1px -1px 0 white,
-    -1px -1px 0 white;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
-
-.subWelcomeText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10%;
-    font-size: 3vw;
-    text-align: end;
-    margin-left: 60%;
-    background-clip: content-box;
-    width: 35vw;
-    height: 14vw;
-    color: #1f145e;
-    border-radius: 10%;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 3px;
+    color: #ffffff;
     text-shadow:    -1px 1px 0 white,
     1px 1px 0 white,
     1px -1px 0 white,

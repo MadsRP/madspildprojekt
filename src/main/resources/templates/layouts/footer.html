@@ -1,19 +1,10 @@
-<div th:fragment="footer">
+<div th:fragment="footer" class="footerDiv">
   <link th:href="@{/andet/footer.css}" rel="stylesheet">
-<div class="footerDiv">
-  <ul class="footerUL">
-    <p class="footer">All Copyrights By MadSpild.dk</p>
-    <div class="SoMeIcons">
-      <a class="a" href="http://www.facebook.com">
-        <img th:src="@{/images/Footer/facebook.png}" class="SoMePicture"/>
-      </a>
-      <a class="a" href="http://www.instagram.com">
-        <img th:src="@{/images/Footer/instagram.png}" class="SoMePicture"/>
-      </a>
-      <a class="a" href="http://www.twitter.com">
-        <img th:src="@{/images/Footer/twitter.png}" class="SoMePicture"/>
-      </a>
+  <div class="footerContent">
+    <div class="copyright">
+      All Copyrights By MadSpild.dk
     </div>
-  </ul>
+        <img th:src="@{/images/footer/Logo3.png}" alt="BrandLogo" class="brandLogo"/>
+  </div>
 </div>
-</div>
+

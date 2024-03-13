@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 body {
   background: linear-gradient(ButtonFace, #93c47d, #274e13);
@@ -62,7 +61,6 @@ body {
 }
 h1{
   font-size: 30px;
-  font-width: 600px;
   color: #fff3f3;
   font-family: Georgia, sans-serif;
 }
@@ -93,7 +91,7 @@ h3{
   margin: 10px 0;
 }
 .course-col:hover{
-  box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
 }
 
 /*--------Fakta om madspild -----*/

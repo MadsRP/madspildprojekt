@@ -1,39 +1,25 @@
-.footerDiv{
-    background: #1E1C1C;
-    height: 20px;
-}
-
-.footerUL{
-    list-style-type: none;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    background: white;
-}
-
-.footer{
+.footerDiv {
+    background: #ffffff;
+    height: 2.5vw;
+    font-size: 13px;
+    font-weight: 900;
     display: flex;
     align-items: center;
-    text-align: center;
-    color:black;
-    margin-left:1%;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px black;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
-.SoMeIcons{
-    margin-top: 1vw;
-    margin-right: 0.5vw;
-    margin-bottom: 0.5vw;
-    background: white;
-    width:200vh;
-    text-align: right;
+.footerContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.SoMePicture{
-    height: 1.5vw;
-    width: 1.5vw;
+.brandLogo {
+    height: 2.3vw;
+    width: 15vw;
     background: white;
-    border-radius: 50%;
+    margin-left: 0.5vw;
+    margin-bottom: 0
 }

@@ -7,7 +7,7 @@ public class Controller {
 
     @GetMapping("/forbruger")
     public String forbruger(){
-        return "forbrug1";
+        return "forbruger";
     }
 
     @GetMapping("/virksomhed")

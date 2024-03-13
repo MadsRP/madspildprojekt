@@ -32,13 +32,17 @@
             <div class="dropdown">
                 <button class="navbarButton" >Organisation</button>
                 <div class="dropdown-content">
-                    <a th:href="@{/forbruger}" class="a">
-                        <button class="navbarButton"> Forbruger</button>
+                    <a th:href="@{/organisation}" class="a">
+                        <button class="navbarButton">Hvad Kan Vi Gøre?</button>
                     </a>
                 </div>
             </div>
-            <button class="navbarButton">Om Os</button>
-            <button class="navbarButton">Kontakt</button>
+            <a th:href="@{/omOs}" class="a">
+                <button class="navbarButton"> Os</button>
+            </a>
+            <a th:href="@{/kontaktOs}" class="a">
+                <button class="navbarButton"> Kontakt</button>
+            </a>
         </ul>
         <div class="SoMeIcons">
             <a class="a" href="http://www.facebook.com">

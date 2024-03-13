@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:href="@{/forbruger/forbrug1.css}" rel="stylesheet">
+  <title>Madspild for virksomheder</title>
+</head>
+
+<body>
+<div th:replace="~{layouts/header :: header}"></div>
+<!-- TIPS OG TRICKS -->
+<div class="text-box">
+  <h1>Tips & Tricks</h1>
+  <p style="font-style: italic">Opdag smarte metoder til at mindske madspild med vores nyeste tips og tricks!<br>Lær at genbruge rester og optimere indkøb og ingredienser. Lad os sammen bekæmpe madspild og skabe mere bæredygtige vaner i køkkenet!</p>
+  <a href="https://stopspildafmad.org/" class="hero-btn">Hvis du vil vide mere!</a>
+</div>
+
+<!-- Bekæmpelse af Madspild -->
+<section class="course">
+  <h1>Bekæmpelse af Madspild</h1>
+  <p style="font-size: larger" >"Spis dine leftovers, før de spiser dig!"</p>
+  <div class="row">
+    <div class="course-col">
+      <h3>Miljø</h3>
+      <p>Madspild belaster miljøet ved at spilde ressourcer som vand, jord og energi. Nedbrydningen af madspild fører også til udledning af drivhusgasser, der forværrer klimaforandringerne. Reducering af madspild bidrager til mindre miljømæssigt fodaftryk og bevarelse af naturressourcer.</p>
+    </div>
+    <div class="course-col">
+      <h3>Socialt</h3>
+      <p>Madspild forværrer ulighed og påvirker global fødevaresikkerhed. Lokalt lider nogle af sult, mens store mængder mad kasseres. <br>Globalt set påvirker madspild fødevaresikkerheden ved at spilde ressourcer, der kunne have været brugt til at producere mad.  </p>
+    </div>
+    <div class="course-col">
+      <h3>Økonomi</h3>
+      <p>Madspild er en økonomisk byrde for forbrugere, virksomheder og samfundet. Det resulterer i unødvendige udgifter for forbrugerne, tab for virksomhederne og ineffektiv ressourceudnyttelse for samfundet. Reducering af madspild kan skabe økonomiske fordele gennem mere effektiv ressourceforvaltning.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Fakta om madspild -->
+<section class="campus">
+  <h1>Fakta om madspild</h1>
+  <p style="font-style: italic; font-size: 20px;" >Bekæmp madspild: Gør en forskel i køkkenet og i verden</p>
+
+  <div class="row">
+    <div class="campus-col">
+      <img th:src="@{/images/forbruger/FeedMe3.png}" alt="missing">
+      <div class="layer">
+        <h3>Globalt madspild: Cirka en tredjedel (ca. 33%) af al produceret mad går tabt eller spildes hvert år, ifølge FN's Fødevare- og Landbrugsorganisation (FAO). </h3>
+      </div>
+    </div>
+    <div class="campus-col">
+      <img th:src="@{/images/forbruger/FeedMe4.jpg}" alt="missing">
+      <div class="layer">
+        <h3>Vandforbrug: Produktionen af en enkelt hamburger kræver omkring 2400 liter vand, hvilket svarer til ca. 660 gallons. Dette er et eksempel på det enorme vandforbrug, der er forbundet med fødevareproduktionen.</h3>
+      </div>
+    </div>
+    <div class="campus-col">
+      <img th:src="@{/images/forbruger/FeedMe2.jpg}" alt="missing">
+      <div class="layer">
+        <h3>Tabte indtægter: Madspild påvirker virksomhedernes bundlinje, og det anslås, at det koster den globale fødevareindustri milliarder dollars årligt.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--- Effektiv madlavning med indkøbslister--->
+
+
+<section class="facilities">
+  <h1>Effektiv madlavning med indkøbslister</h1>
+  <p style="font-size: 20px;">Madspild er som at betale for et gymmedlemskab og aldrig træne. Vi betaler for al maden, men den ender med at sidde på sidelinjen og se doven ud i køleskabet.</p>
+
+  <div class="row">
+    <div class="facilities-col">
+      <img th:src="@{/images/forbruger/FeedMe5.jpg}" alt="missing">
+      <h3>Planlægning er nøglen:</h3>
+      <p>Lav en detaljeret madplan for ugen og skriv en indkøbsliste baseret på dine måltider. På den måde undgår du at købe unødvendige ting og minimerer risikoen for madspild.</p>
+    </div>
+    <div class="facilities-col">
+      <img th:src="@{/images/forbruger/FeedMe6.jpg}" alt="missing">
+      <h3>Vær kreativ med rester:</h3>
+      <p> Udnyt rester fuldt ud ved at genbruge dem i nye retter. F.eks. kan rester af kylling blive til wraps eller suppe. Dette reducerer ikke kun madspild, men sparer også tid og penge.</p>
+    </div>
+    <div class="facilities-col">
+      <img th:src="@{/images/forbruger/FeedMe7.jpg}" alt="missing">
+      <h3>Kend dine forbrugsvaner: </h3>
+      <p>Hold øje med, hvad du rent faktisk spiser, og juster dine indkøb herefter. Hvis du f.eks. altid har friske grøntsager til overs i slutningen af ugen, skal du måske reducere mængden af dem, du køber. Det kan hjælpe med at minimere madspild og sikre, at du kun køber, hvad du har brug for.</p>
+    </div>
+  </div>
+</section>
+
+<!--- Grønne Genveje --->
+
+<section class="testimonials">
+  <h1>Grønne Genveje</h1>
+  <p style="font-style: italic; font-size: 20px">Få mere fra dit måltid, og mindre i skraldespanden!</p>
+  <div class="row">
+    <div class="testimonials-col">
+      <img th:src="@{/images/forbruger/FeedMe8.jpg}" alt="missing">
+      <div>
+        <p>WeFood er en dansk nonprofit supermarkedskæde, der er dedikeret til at bekæmpe madspild ved at sælge overskudsvarer fra fødevareindustrien til nedsatte priser. De modtager donationer af overskudsvarer fra producenter, leverandører og detailhandlere og sælger disse varer i deres butikker, hvilket giver forbrugerne mulighed for at købe kvalitetsprodukter til overkommelige priser, samtidig med at deres overskud går til velgørende formål.</p>
+        <a class="btn-link" href="https://www.noedhjaelp.dk/wefood">Besøg WeFood's hjemmeside</a>
+      </div>
+    </div>
+    <div class="testimonials-col">
+      <img th:src="@{/images/forbruger/FeedMe8.jpg}" alt="missing">
+      <div>
+        <p>Too Good To Go er en international app-baseret platform, der giver forbrugerne mulighed for at købe overskudsmad fra restauranter, cafeer, butikker og andre madsteder til nedsatte priser, inden de kasseres. Brugere af appen kan browse gennem lokale virksomheders tilgængelige overskudsmad, foretage en bestilling og derefter afhente deres mad til en brøkdel af den oprindelige pris. Denne platform hjælper med at reducere madspild ved at give overskudsvarer en chance for at blive solgt og spist i stedet for at blive kasseret.</p>
+        <a class="btn-link" href="https://www.toogoodtogo.com/da">Besøg ToGoodToGo's hjemmeside</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--- Kontakt -->
+<section class="cta">
+  <h1> Brug for inspiration? </h1>
+  <a href="" class="hero-btn">Kontakt Os</a>
+</section>
+<div th:replace="/layouts/footer :: footer"></div>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 .footerDiv{
     background: #1E1C1C;
-    height: 1vw;
+    height: 20px;
 }
 
 .footerUL{
@@ -19,7 +19,6 @@
     margin-left:1%;
     font-weight: 700;
     letter-spacing: 2px;
-    text-align: center;
     text-shadow: 1px 1px 2px black;
 }
 

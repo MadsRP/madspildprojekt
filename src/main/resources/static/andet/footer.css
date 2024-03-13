@@ -8,14 +8,14 @@
     margin: 0;
     width: 100%;
     display: flex;
-    background: #1E1C1C;
+    background: white;
 }
 
 .footer{
     display: flex;
     align-items: center;
     text-align: center;
-    color:white;
+    color:black;
     margin-left:1%;
     font-weight: 700;
     letter-spacing: 2px;
@@ -27,7 +27,7 @@
     margin-top: 1vw;
     margin-right: 0.5vw;
     margin-bottom: 0.5vw;
-    background: #1E1C1C;
+    background: white;
     width:200vh;
     text-align: right;
 }
@@ -35,6 +35,6 @@
 .SoMePicture{
     height: 1.5vw;
     width: 1.5vw;
-    background: #1E1C1C;
+    background: white;
     border-radius: 50%;
 }

@@ -103,7 +103,7 @@ h2  {
 }
 
 .image {
-    max-width: 40%;
+    max-width: 35%;
     display: flex;
     justify-content: flex-end;
 }

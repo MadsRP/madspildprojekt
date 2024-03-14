@@ -1,66 +1,77 @@
 body, html {
     margin: 0;
     font-family: "Arial", sans-serif;
-    color: white; /* Ændret tekstfarven til hvid */
 }
 
-h2 {
-    font-size: 2.5vw; /* Øget størrelsen på overskrifter */
-    margin-bottom: 1.5vw; /* Øget afstanden mellem overskrifter og indhold */
-}
-p {
-    font-size: 1.5vw; /* Øget størrelsen på almindelig tekst */
-    line-height: 2.2vw; /* Øget linjehøjden for bedre læsbarhed */
-    margin-bottom: 1.5vw; /* Øget afstanden mellem afsnit */
-}
-/* Specifikke baggrunde for hver container/boks */
-#about { background: linear-gradient(to right, #6A097D, #D40C52); padding: 6vw; }
-#initiatives { background: linear-gradient(to right, #393e46, #2b2d42); padding: 6vw; }
-#resources { background: linear-gradient(to right, #56CCF2, #2F80ED); padding: 6vw; }
-#contact { background: linear-gradient(to right, #4A00E0, #8E2DE2); padding: 6vw; }
-
-/* Tilpasning af layoutet for kontaktformularen */
-#contact form {
+.container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%; /* Sørg for, at formularen er i fuld bredde */
+    padding: 12vw;
+    color: white;
+    min-height: 45vh;
 }
 
-#contact form label {
-    margin-bottom: 0.8vw; /* Juster afstanden mellem etiketter */
-    font-size: 1.5vw; /* Øget størrelsen på etiketter */
+.container-3 {
+    display: flex;
+    justify-content: center;
 }
 
-#contact form input,
-#contact form textarea,
-#contact form button {
-    margin-bottom: 1.5vw; /* Juster afstanden mellem felter og knap */
-    width: 100%; /* Gør inputfelter og knap bredden af containeren */
-    font-size: 1.5vw; /* Øget størrelsen på inputfelter og knap */
+.subFrivillig {
+    margin-top: 2vw;
+    width: 100%;
+    text-align: center;
 }
 
-/* Større billeder til sociale medier */
-.SoMePicture {
-    height: 4vw; /* Juster størrelsen efter behov */
-    width: 4vw;  /* Juster størrelsen efter behov */
-    background: #1E1C1C;
-    border-radius: 50%;
+
+
+.container-1 { background: linear-gradient(to right, #6A097D, #D40C52); padding: 10vw; }
+.container-2 { background: linear-gradient(to right, #393e46, #2b2d42); padding: 10vw; }
+.container-3 { background: linear-gradient(to right, #56CCF2, #2F80ED); padding: 10vw; }
+.container-4 { background: linear-gradient(to right, #4A00E0, #8E2DE2); padding: 10vw; }
+.container-5 { background: linear-gradient(to right, #7c6e9c, #05d348); padding: 10vw; }
+
+.content {
+    max-width: 70%;
+    text-align: center;
 }
 
-/* Den følgende del sikrer bedre visning for mindre skærme/opløsninger*/
+h1 {
+    font-size: 2.3vw;
+    margin-bottom: 1.5vw;
+}
+
+p {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-bottom: 2vw;
+}
+
+.image {
+    max-width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2vw;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
 @media (max-width: 800px) {
-    #about, #initiatives, #resources, #contact {
-        padding: 10vw; /* Øget padding på mindre skærme for bedre plads */
+    .container {
+        padding:6vw;
     }
 
-    h2 {
-        font-size: 4vw; /* Mindre overskriftsstørrelse på mindre skærme */
+    h1 {
+        font-size: 2.8vw;
     }
 
     p {
-        font-size: 3vw; /* Mindre tekststørrelse på mindre skærme */
-        line-height: 4vw; /* Justeret linjehøjde for bedre læsbarhed */
-        margin-bottom: 2vw; /* Mindre afstand mellem afsnit på mindre skærme */
+        font-size: 1.8vw;
     }
 }

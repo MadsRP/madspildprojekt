@@ -19,6 +19,9 @@ public class Controller {
     @GetMapping("/organisation")
     public String organisation(){return "/organisation/organisation";}
 
+    @GetMapping("/tilmelding")
+    public String organisationTilmelding(){return "/organisation/tilmelding";}
+
     @GetMapping("/omOs")
     public String omOs(){return "/andet/omOs";}
 

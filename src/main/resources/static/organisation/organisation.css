@@ -19,10 +19,12 @@ body, html {
 }
 
 .subFrivillig {
-    margin-top: 2vw;
+    margin-top: 20vw;
     width: 100%;
     text-align: center;
+    font-size: 2vw;
 }
+
 
 
 
@@ -43,24 +45,20 @@ h1 {
 }
 
 p {
-    font-size: 1.5vw;
+    font-size: 1vw;
     line-height: 2vw;
     margin-bottom: 2vw;
 }
 
-.image {
-    max-width: 70%;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 2vw;
-}
-
-.image img {
-    max-width: 100%;
+.container img{
+    max-width: 50%;
     max-height: 100%;
     object-fit: contain;
+    display: flex;
     border-radius: 20px;
+    margin: 0 auto;
 }
+
 
 @media (max-width: 800px) {
     .container {

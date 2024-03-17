@@ -40,4 +40,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-.container-1 { background: linear-gradient(to right, #6A097D, #D40C52); padding: 10vw; }
+.container-1 {
+    background: linear-gradient(to right, #6A097D, #D40C52); padding: 10vw;
+    height: 60vh;
+}

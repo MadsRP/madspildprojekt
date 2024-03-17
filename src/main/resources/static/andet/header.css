@@ -4,15 +4,16 @@
     background-color: #ffffff;
     top: 0;
     padding: 0;
+    height: 7vh;
     width: 100%;
     z-index: 1000;
 }
 
 .logo {
     margin-left: 3vw;
-    padding-top: 10px;
-    height: 40px;
-    width: 45px;
+    margin-top: 1vh;
+    height: 5vh;
+    width: auto;
 }
 
 .navbar {
@@ -27,42 +28,39 @@
 .navbarButton {
     color: #000000;
     border:none;
-    height: 60px;
-    width: 150px;
+    height: 7vh;
+    width: 21vh;
     font-weight: 1000;
     text-align: center;
     background-color: white;
-    text-decoration: none; /* Fjerner standard understregning */
-    position: relative; /* Gør det muligt at positionere pseudo-elementer relativt til knappen */
-    overflow: hidden; /* Sikrer at pseudo-elementet ikke går udenfor knappens grænser */
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
+}
+
+.navbarButton.notSelectable {
+    cursor: default;
 }
 
 .navbarButton::after {
     content: '';
     display: block;
     position: absolute;
-    bottom: 10px;
-    left: 20px;
-    width: 0; /* Start med en bredde på 0 for at skabe animationseffekten */
-    height: 4px; /* Højden på din understregning */
-    background-color: #2b6cce; /* Farven på din understregning */
-    transition: width 0.4s ease; /* Animation over 0.3 sekunder */
+    bottom: 5px;
+    left: 15%;
+    width: 0;
+    height: 4px;
+    background-color: #2b6cce;
+    transition: width 0.4s ease;
 }
 
 .navbarButton:hover::after {
-    width: 70%; /* Understregning tager hele bredden, når der hoveres */
-}
-
-.dropdown {
-    height: 60px;
-    width: 150px;
-    color: #000000; /* Tekstfarve ændret til sort for bedre synlighed */
+    width: 70%;
 }
 
 .dropdown-content {
     display: none;
-    min-width: 100px; /* Minimumsbredde for dropdown indhold */
 }
 
 .dropdown-content a {
@@ -81,7 +79,7 @@
 }
 
 .SoMeIcons{
-    margin-top: 1vw;
+    margin-top: 2.2vh;
     margin-right: 0.5vw;
     margin-bottom: 0.5vw;
     width:200vh;
@@ -95,4 +93,13 @@
     background: white;
     border-radius: 50%;
 }
+
+@media (max-width: 800px) {
+    .navbarButton{
+        width: 28vh;
+        font-size: 10px;
+
+    }
+}
+
 

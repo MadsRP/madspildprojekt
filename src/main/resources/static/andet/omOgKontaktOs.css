@@ -24,6 +24,10 @@ body, html {
     background: linear-gradient(77deg, rgba(166,166,175,1) 19%, rgba(126,143,145,1) 70%, rgba(118,131,134,1) 93%);
 }
 
+.container-4  {
+    background: linear-gradient(to right, #39592b, #9fd188);
+    height: 11.2vh}
+
 .content {
     max-width: 50%;
 }
@@ -56,7 +60,7 @@ h2  {
     background: linear-gradient(to right, #40704d, #6ab87f);
     float:left;
     margin: 0 auto;
-    height: 41.8vh;
+    height: 50.8vh;
 }
 
 .box1 {

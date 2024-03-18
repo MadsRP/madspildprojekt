@@ -19,8 +19,11 @@ public class Controller {
   public String forbrugerside(){
     return "/forbruger/forbrugerside";
   }
-    @GetMapping("/virksomhed")
-    public String virksomhed() { return "/virksomhed/virksomhed";}
+  @GetMapping("/virksomhed")
+    public String virksomhed() { return "/virksomhed/reducerendeTiltag";}
+
+  @GetMapping("/inspiration")
+  public String inspiration() {return "/virksomhed/inspiration";}
 
     @GetMapping("/organisation")
     public String organisation(){return "/organisation/organisation";}

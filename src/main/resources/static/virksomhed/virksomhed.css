@@ -13,11 +13,20 @@ body, html {
 }
 
 /* Specifikke baggrunde for hver container/boks */
+
+/* Container 1-5 er for /reducerendeTiltag */
 .container-1 { background: linear-gradient(to right, #2a2a72, #009ffd); }
 .container-2 { background: linear-gradient(to right, #4b6cb7, #182848); }
 .container-3 { background: linear-gradient(to right, #36D1DC, #5B86E5); }
 .container-4 { background: linear-gradient(to right, #243b55, #141E30); }
 .container-5 { background: linear-gradient(to right, #6a7b98, #8399a7); }
+
+
+ /* Container 6-9 er for /inspiration */
+.container-6 { background: linear-gradient(to right, #275470, #2a2a72); }
+.container-7 { background: linear-gradient(to right, #156496, #2F80ED); }
+.container-8 { background: linear-gradient(to right, #6544c4, #36156b); }
+.container-9 { background: linear-gradient(to right, #433b4d, #7f7391); }
 
 .content {
     max-width: 50%;
@@ -46,17 +55,27 @@ p {
     border-radius: 20px;
 }
 
-/* Den følgende del sikrer bedre visning for mindre skærme/opløsninger*/
 @media (max-width: 800px) {
     .container {
-        padding:6vw;
+        flex-direction: column;
+        padding: 6vw;
+    }
+
+    .content, .image {
+        max-width: 100%;
     }
 
     h1 {
-        font-size: 2.8vw;
+        font-size: 6vw;
     }
 
     p {
-        font-size: 1.8vw;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .image img {
+        max-width: 80%;
+        margin: 0 auto;
     }
 }
